@@ -43,3 +43,8 @@ group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
+
+#Adding Confluence gem
+gem 'confluence', '~> 1.0.3'
+
+gem 'confluence-client', '~> 0.0.8'
