@@ -1,67 +1,68 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--[if lt IE 8 ]><html lang="en" class="no-js ie ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie"><![endif]-->
+<!--[if (gt IE 8)|!(IE)]><!--><html lang="en" class="no-js"><!--<![endif]-->
 <head>
-  <title>The page you were looking for doesn't exist (404)</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
-  body {
-    background-color: #EFEFEF;
-    color: #2E2F30;
-    text-align: center;
-    font-family: arial, sans-serif;
-    margin: 0;
-  }
-
-  div.dialog {
-    width: 95%;
-    max-width: 33em;
-    margin: 4em auto 0;
-  }
-
-  div.dialog > div {
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    background-color: white;
-    padding: 7px 12% 0;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
-
-  h1 {
-    font-size: 100%;
-    color: #730E15;
-    line-height: 1.5em;
-  }
-
-  div.dialog > p {
-    margin: 0 0 1em;
-    padding: 1em;
-    background-color: #F7F7F7;
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-color: #DADADA;
-    color: #666;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
-  </style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Constellation Admin Skin</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<!-- Mobile metas -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	
+	<!-- Global stylesheets -->
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<link href="../css/form.css" rel="stylesheet" type="text/css">
+	<link href="../css/standard.css" rel="stylesheet" type="text/css">
+	<link href="../css/special-pages.css" rel="stylesheet" type="text/css">
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+	<link rel="icon" type="image/png" href="../favicon-large.png">
+	
+	<!-- Modernizr for support detection, all javascript libs are moved right above </body> for better performance -->
+	<script src="../js/libs/modernizr.custom.min.js"></script>
+	
 </head>
 
-<body>
-  <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <div>
-      <h1>The page you were looking for doesn't exist.</h1>
-      <p>You may have mistyped the address or the page may have moved.</p>
-    </div>
-    <p>If you are the application owner check the logs for more information.</p>
-  </div>
+<!-- the 'special-page' class is only an identifier for scripts -->
+<body class="special-page code-page dark">
+	
+	<h1>404</h1>
+	<p>Page not found</p>
+	<section>
+		
+		<ul class="action-tabs on-form with-children-tip children-tip-left">
+			<li><a href="javascript:history.back()" title="Go back"><img src="../images/icons/fugue/navigation-180.png" width="16" height="16"></a></li>
+		</ul>
+		
+		<ul class="action-tabs right on-form with-children-tip children-tip-right">
+			<li><a href="../index.html" title="Go to homepage"><img src="../images/icons/fugue/home.png" width="16" height="16"></a></li>
+		</ul>
+		
+		<form class="block-content no-title dark-bg form" method="post" action="">
+			<input type="text" name="s" id="s" value=""> &nbsp; 
+			<button type="submit">Search</button>
+		</form>
+		
+	</section>
+	
+	<!--
+	
+	Updated as v1.5:
+	Libs are moved here to improve performance
+	
+	-->
+	
+	<!-- Generic libs -->
+	<script src="../js/libs/jquery-1.6.3.min.js"></script>
+	
+	<!-- Template libs -->
+	<script src="../js/jquery.tip.js"></script>
+	
 </body>
 </html>
