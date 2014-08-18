@@ -1,3 +1,6 @@
+require 'rubygems'
+require 'confluence4r'
+
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
@@ -10,6 +13,27 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+
+      # Some variables specific for my Confluence setup
+      url = 'http://techspace.snapdeal.in/'
+      #@user = 'amit.siddhu'
+      #@password = 'asid@snapdeal7'
+      space = 'myspace'
+      template = 'Status for week ending YYYY-MM-DD'
+
+# Find the date of the next Friday
+friday = Date.today
+friday += 1 while friday.wday != 5
+
+# Log in to Confluence and retrieve the template page
+#server = Confluence::Wiki.new(url)
+#server.login(user, password)
+#page = server.getPage(space, template)
+
+server = Confluence::Server.new(url)
+server.login(@user.username, @user.password)
+@response = server.getSpaces()
+
   end
 
   # GET /users/new
