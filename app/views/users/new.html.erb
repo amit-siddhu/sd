@@ -1,5 +1,50 @@
-<h1>New user</h1>
+<!-- the 'special-page' class is only an identifier for scripts -->
+<body class="special-page login-bg dark">
 
-<%= render 'form' %>
+ 
+  
+  <section id="login-block">
+    <div class="block-border"><div class="block-content">
+      
+      <!--
+      IE7 compatibility: if you want to remove the <h1>, 
+      add style="zoom:1" to the above .block-content div
+      -->
+      
+      <div class="block-header">Please login</div>
+        
+        <%= form_for(@user, :html => {:class => "form with-margin"}) do |f| %>
+        
+        <p class="inline-small-label" style="padding-bottom:25px">
+          <%= f.label :username %>
+          <%= f.text_field(:username, :class => "full-width") %>
+        </p>
+        
+        <p class="inline-small-label" style="padding-bottom:25px">
+          <%= f.label :password %>
+          <%= f.password_field(:password, :class => "full-width") %>
+        </p>
+        <%= f.button(:login, :class => "float-right") %>
+                
+        <p class="input-height">
+          <input type="checkbox" name="keep-logged" id="keep-logged" value="1" class="mini-switch" checked="checked">
+          <label for="keep-logged" class="inline">Keep me logged in</label>
+        </p>
+      
+      <% end %>
 
-<%= link_to 'Back', users_path %>
+
+      <form class="form" id="password-recovery" method="post" action="">
+        <fieldset class="grey-bg no-margin collapse">
+          <legend><a href="#">Lost password?</a></legend>
+          <p class="input-with-button">
+            <label for="recovery-mail">Enter your e-mail address</label>
+            <input type="text" name="recovery-mail" id="recovery-mail" value="">
+            <button type="button">Send</button>
+          </p>
+        </fieldset>
+      </form>
+    </div></div>
+  </section>
+    
+</body>

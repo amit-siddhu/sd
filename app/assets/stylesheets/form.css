@@ -57,12 +57,12 @@
 			margin: -0.25em -0.333em -0.333em -0.5em;
 			padding: 0.25em 20px 0.333em 0.5em;
 			color: #666;
-			background: url(../images/icons/fugue/chevron-off.png) no-repeat right 60%;
+			background: url(../assets/icons/fugue/chevron-off.png) no-repeat right 60%;
 			}
 			.form legend a:hover,
 			.legend a:hover {
 				color: #3399cc;
-				background-image: url(../images/icons/fugue/chevron.png);
+				background-image: url(../assets/icons/fugue/chevron.png);
 			}
 	
 	.form fieldset.collapsed,
@@ -99,11 +99,11 @@
 				}
 				.form fieldset.collapsed legend a,
 				.fieldset.collapsed .legend a {
-					background-image: url(../images/icons/fugue/chevron-expand-off.png);
+					background-image: url(../assets/icons/fugue/chevron-expand-off.png);
 					}
 					.form fieldset.collapsed legend a:hover,
 					.fieldset.collapsed .legend a:hover {
-						background-image: url(../images/icons/fugue/chevron-expand.png);
+						background-image: url(../assets/icons/fugue/chevron-expand.png);
 					}
 		
 		fieldset legend .show-expanded, .fieldset .legend .show-expanded { display: inline; }
@@ -256,7 +256,7 @@
 		color: #333333;
 		padding: 0.5em;
 		border: 1px solid #89bad3;
-		background: white url(../images/old-browsers-bg/input-bg.png) repeat-x top;
+		background: white url(../assets/old-browsers-bg/input-bg.png) repeat-x top;
 		background: -moz-linear-gradient(
 			top,
 			#d4d4d4,
@@ -328,7 +328,7 @@
 		border-radius: 0.417em;
 		}
 		.form textarea {
-			background: white url(../images/old-browsers-bg/input-bg.png) repeat-x top;
+			background: white url(../assets/old-browsers-bg/input-bg.png) repeat-x top;
 			background: -moz-linear-gradient(
 				top,
 				#d4d4d4,
@@ -539,9 +539,9 @@
 		right: -8px;
 		top: -8px;
 		}
-		.check-ok { background: url(../images/icons/fugue/tick-circle-blue.png) no-repeat; }
-		.check-error { background: url(../images/icons/fugue/cross-circle.png) no-repeat; }
-		.check-warning { background: url(../images/icons/fugue/exclamation-diamond.png) no-repeat; }
+		.check-ok { background: url(../assets/icons/fugue/tick-circle-blue.png) no-repeat; }
+		.check-error { background: url(../assets/icons/fugue/cross-circle.png) no-repeat; }
+		.check-warning { background: url(../assets/icons/fugue/exclamation-diamond.png) no-repeat; }
 		
 		span.relative > input + .check-ok,
 		span.relative > select + .check-ok,
